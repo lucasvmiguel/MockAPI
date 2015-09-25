@@ -1,0 +1,28 @@
+[
+  {
+    "request":{
+      "method": "POST",
+      "path": "/teste",
+      "headers":{
+        "header1": "oi!",
+        "header2": "tchau!"
+      },
+      "body":{
+        "body1": "body1",
+        "body2":{
+          "body2.1": "body2.1",
+          "body2.2": 100
+        }
+      }
+    },
+    "response":{
+      "status": 201,
+      "headers":{
+        "uhul": "test Header"
+      },
+      "body":{
+        "message": "Oi mundo!"
+      }
+    }
+  }
+]

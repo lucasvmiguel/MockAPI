@@ -1,0 +1,4 @@
+{
+  "port": 8082,
+  "scenarioPath": "../MockAPI/scenarios.json"
+}
