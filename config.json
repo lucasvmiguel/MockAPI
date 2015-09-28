@@ -1,4 +1,5 @@
 {
   "port": 8082,
-  "scenarioPath": "../MockAPI/scenarios.json"
+  "scenarioPath": "/home/lucas/Projects/MockAPI/scenarios.json",
+  "mode": "debug"
 }

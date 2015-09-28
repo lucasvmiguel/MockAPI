@@ -1,5 +1,7 @@
 'use strict';
 
+let R = require('ramda');
+
 class Validator{
   static Header(expected, sent){
     for(let e in expected){
@@ -12,21 +14,11 @@ class Validator{
   }
 
   static Body(expected, sent){
-    if(sent === undefined && expected !== undefined){
-      return false;
-    }
-
-    for(let e in expected){
-      if(sent[e] !== undefined && sent[e] === expected[e])
-        continue;
-      else
-        return false;
-    }
-    return true;
+    return R.equals(expected, sent);
   }
 
   static Params(expected, sent){
-    
+    return R.equals(expected, sent);
   }
 }
 

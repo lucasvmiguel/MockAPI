@@ -2,8 +2,12 @@
 
 let fs = require('fs');
 let path = require('path');
-let MockApi = require('./mockapi');
-let config = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../MockAPI/config.json'), 'UTF-8'));
+let MockApi = require('./api/mockapi');
+let Log = require('./utils/log');
+let Config = require('./utils/config');
 
-let mock = new MockApi(config.port, path.resolve(__dirname, config.scenarioPath));
+let c = Config.Instance();
+
+let mock = new MockApi(c.port, c.scenarioPath);
+Log.Info('Scenario path: ' + c.scenarioPath);
 mock.run();

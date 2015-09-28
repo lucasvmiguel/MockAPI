@@ -13,6 +13,10 @@
           "body2.1": "body2.1",
           "body2.2": 100
         }
+      },
+      "params":{
+        "a": "aa",
+        "b": "bb"
       }
     },
     "response":{

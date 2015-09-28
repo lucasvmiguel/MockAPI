@@ -1,9 +1,4 @@
--organizar em pastas o projeto
--pegar o body do request no express
--validar url params
--melhorar os logs
 -cenário
   -vai poder ter mais de um arquivo?
-  -onde ficaram os arquivos?
--deixar o código um pouco mais funcional
--logar em qual porta está subindo a aplicação, ta printando undefined mesmo subindo em uma porta correta
+-testes!!!
+-n deixar quebrar json errado vindo
