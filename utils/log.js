@@ -3,16 +3,19 @@
 let colors = require('colors/safe');
 
 class Log{
-  static Break(){
+  static Break() {
     console.log('\n');
   }
-  static Error(text){
+
+  static Error(text) {
     console.log(colors.red('Error: ' + text));
   }
-  static Info(text){
+
+  static Info(text) {
     console.log(colors.green('Info: ' + text));
   }
-  static Warning(text){
+
+  static Warning(text) {
     console.log(colors.yellow('Warning: ' + text));
   }
 }

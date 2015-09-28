@@ -6,13 +6,14 @@ let path = require('path');
 class Config{
 
   constructor() {
-    throw "Can't iniatilize this class(Singleton class)";
+    throw 'Cannot iniatilize this class(Singleton class)';
   }
 
-  static Instance(){
-    if(!this.instance){
+  static Instance() {
+    if (!this.instance) {
       this.instance = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../config.json'), 'UTF-8'));
     }
+
     return this.instance;
   }
 }
